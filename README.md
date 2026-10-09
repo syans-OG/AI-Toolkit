@@ -6,7 +6,8 @@ Kumpulan **skills, agents, dan commands** untuk AI coding assistant (opencode / 
 
 ```
 KITAB/
-├── skills/          # 77 skill (folder berisi SKILL.md + pendukungnya)
+├── skills/          # 82 skill (folder berisi SKILL.md + pendukungnya)
+│   └── SKILLS.md    # katalog ringkas semua skill (daftar di sini dulu sebelum pakai)
 ├── agents/          # 6 subagent (format .md)
 ├── commands/        # 10 command slash (format .md)
 └── README.md
@@ -87,6 +88,8 @@ Setelah dipasang, skills bisa dipanggil otomatis oleh agent, commands bisa dijal
 | `ponytail` | Solusi paling malas yang benar-benar bekerja (YAGNI) |
 | `karpathy-guidelines` | Aturan perilaku untuk hindari kesalahan umum LLM coding |
 | `tdd` | Test-driven development: red-green-refactor |
+| `writing-plans` | Susun rencana implementasi sebelum mulai tugas multi-langkah |
+| `executing-plans` | Jalankan rencana implementasi yang sudah disusun |
 | `migration` | Migrasi schema/data/API yang reversible dan aman |
 | `domain-modeling` | Mempertajam domain model proyek & mendokumentasikan ADR |
 | `code-review` | Review kode dari dua sisi: standards dan spec |
@@ -110,6 +113,7 @@ Setelah dipasang, skills bisa dipanggil otomatis oleh agent, commands bisa dijal
 | `verify-and-stop` | Buktikan pekerjaan memenuhi kriteria tanpa menambah scope |
 | `terminal-ops` | Workflow eksekusi repo berbasis bukti yang terverifikasi |
 | `terminal-screenshot` | Render output CLI berwarna ke PNG untuk verifikasi visual |
+| `verification-before-completion` | Wajib buktikan verifikasi sebelum klaim selesai (evidence > asersi) |
 
 ### 📄 Dokumen & Media
 | Skill | Fungsi |
@@ -122,6 +126,7 @@ Setelah dipasang, skills bisa dipanggil otomatis oleh agent, commands bisa dijal
 | `logo-generator` | Optimasi penempatan logo, branding header, favicon |
 | `humanizer` | Menulis ulang teks agar tidak terdengar seperti AI |
 | `stop-slop` | Menghilangkan pola tulisan AI dari prosa |
+| `i-have-adhd` | Gaya jawaban ADHD-friendly: mulai dari tindakan, langkah bernomor |
 | `writing-for-agents` | Menulis dokumen untuk agent (SKILL.md, AGENTS.md) |
 | `screenshot` | Screenshot desktop/window/region untuk verifikasi visual |
 
@@ -152,6 +157,7 @@ Setelah dipasang, skills bisa dipanggil otomatis oleh agent, commands bisa dijal
 |---|---|
 | `setup` | Router untuk memilih skill yang tepat lintas domain |
 | `find-skills` | Menemukan & menginstal skill yang tersedia |
+| `writing-skills` | Membuat/mengedit/memverifikasi skill baru |
 | `codebase-onboarding` | Analisis codebase asing & buat panduan onboarding |
 | `prompt-optimizer` | Menganalisis & mengoptimalkan prompt |
 | `context-budget` | Audit pemakaian context window (bloat agents/skills/rules) |
